@@ -3,7 +3,7 @@
 ## Example usage
 
 ```javascript
-import KnownErrorBoundary, { AllErrorBoundary, useKnownError, KnownError } from 'react-known-error-boundary`;
+import KnownErrorBoundary, { AllErrorBoundary, useKnownError, KnownError } from 'react-known-error-boundary';
 import { PageLayout, Nav, Sidebar, BadEntity, Footer, useLoadEntity } from './your/app/code';
 
 
