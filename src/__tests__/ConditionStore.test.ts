@@ -1,0 +1,4 @@
+describe('#ConditionStore', () => {
+    it('xxx', () => {
+    });
+  });
