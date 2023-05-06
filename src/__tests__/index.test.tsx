@@ -3,6 +3,6 @@
 // import { PropsWithChildren } from 'react';
 
 describe('#react-conditional-fallback', () => {
-  it('xxx', async () => {
+  xit('xxx', async () => {
   });
 });
