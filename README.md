@@ -12,9 +12,22 @@ Creates a component, provider, and controls for handling conditions in a react a
 ```javascript
 import createConditionalFallback from 'react-conditional-fallback';
 
+const optionalInitialValue = false;
+const { Provider, useCondition, set, clear, ConditionalFallback } = createConditionalFallback(optionalInitialValue);
+
+/*
+ * `Provider` can hoist the state higher in the app, if omitted, the state exists at the level of the `ConditionalFallback`.
+ * `useCondition` is a hook that returns the value of the condition
+ * `set` sets the condition to `true`, note this does not need to be executed within the React context.
+ * `clear` sets the condition to `false`, note this does not need to be executed within the React context.
+ * `ConditionalFallback` operates similar to `React.Suspense` except that it renders the fallback when the condition is true (controlled via `set` and `clear`).
+ * /
+
 function App() {
   return (
-    <></>
+    <ConditionalFallback fallback={<UnhappyPath />}>
+      <HappyPath />
+    </ConditionalFallback>
   );
 }
 ```
