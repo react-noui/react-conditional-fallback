@@ -1,4 +1,4 @@
-import ConditionStore from 'ConditionStore';
+import ConditionStore from './ConditionStore';
 import React, { PropsWithChildren, ReactNode, createContext, useContext, useMemo, useSyncExternalStore } from 'react';
 
 export type ConditionalFallbackProps = PropsWithChildren<{fallback: ReactNode}>;
